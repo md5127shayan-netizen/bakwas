@@ -8,8 +8,6 @@ import circle1 from "../assets/hero/circle1.jpeg";
 import circle2 from "../assets/hero/circle2.jpeg";
 import circle3 from "../assets/hero/circle3.jpeg";
 
-import logoVideo from "../assets/hero/logo-video.mp4";
-
 const HeroSection = () => {
   const [playVideo, setPlayVideo] = useState(false);
 
@@ -72,7 +70,7 @@ const HeroSection = () => {
           animate-fadeIn
           "
         >
-          <source src={logoVideo} type="video/mp4" />
+          <source src="/logo-video.mp4" type="video/mp4" />
         </video>
       )}
 
@@ -133,29 +131,29 @@ const HeroSection = () => {
             
             {/* MEMORY BUTTON */}
 
-           <button
-  onClick={() => {
-    document
-      .getElementById("gallery-section")
-      ?.scrollIntoView({
-        behavior: "smooth",
-      });
-  }}
-  className="
-  bg-black
-  text-white
-  px-14
-  h-[92px]
-  rounded-[28px]
-  text-[28px]
-  font-semibold
-  hover:scale-105
-  transition-all
-  duration-300
-  "
->
-  Relive memories
-</button>
+            <button
+              onClick={() => {
+                document
+                  .getElementById("gallery-section")
+                  ?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+              }}
+              className="
+              bg-black
+              text-white
+              px-14
+              h-[92px]
+              rounded-[28px]
+              text-[28px]
+              font-semibold
+              hover:scale-105
+              transition-all
+              duration-300
+              "
+            >
+              Relive memories
+            </button>
 
             {/* VIDEO BUTTON */}
 
@@ -267,68 +265,66 @@ const HeroSection = () => {
 
       {/* SEARCH BAR */}
 
-     {/* SEARCH BAR */}
+      <div
+        className={`
+        hidden
+        md:flex
+        absolute
+        bottom-10
+        left-1/2
+        -translate-x-1/2
+        w-[82%]
+        h-[95px]
+        bg-white/92
+        backdrop-blur-md
+        rounded-md
+        items-center
+        justify-between
+        overflow-hidden
+        z-20
+        transition-all
+        duration-1000
 
-<div
-  className={`
-  hidden
-  md:flex
-  absolute
-  bottom-10
-  left-1/2
-  -translate-x-1/2
-  w-[82%]
-  h-[95px]
-  bg-white/92
-  backdrop-blur-md
-  rounded-md
-  items-center
-  justify-between
-  overflow-hidden
-  z-20
-  transition-all
-  duration-1000
+        ${
+          playVideo
+            ? "opacity-0 translate-y-20"
+            : "opacity-100 translate-y-0"
+        }
+        `}
+      >
+        {/* CENTER TEXT */}
 
-  ${
-    playVideo
-      ? "opacity-0 translate-y-20"
-      : "opacity-100 translate-y-0"
-  }
-  `}
->
-  {/* CENTER TEXT */}
+        <div className="flex-1 flex items-center justify-center">
+          
+          <h2
+            className="
+            typing-text
+            text-[42px]
+            font-semibold
+            tracking-[8px]
+            text-black
+            "
+          >
+            HAPPINESS
+          </h2>
+        </div>
 
-  <div className="flex-1 flex items-center justify-center">
-    
-    <h2
-      className="
-      typing-text
-      text-[42px]
-      font-semibold
-      tracking-[8px]
-      text-black
-      "
-    >
-      HAPPINESS
-    </h2>
-  </div>
+        {/* PLAY BUTTON */}
 
-  {/* PLAY BUTTON */}
-
-  <button
-    className="
-    h-full
-    w-[180px]
-    bg-[#c9ab57]
-    text-white
-    text-5xl
-    hover:bg-[#b99a45]
-    duration-300
-    "
-  >
-    ▶
-  </button>
-</div>
+        <button
+          className="
+          h-full
+          w-[180px]
+          bg-[#c9ab57]
+          text-white
+          text-5xl
+          hover:bg-[#b99a45]
+          duration-300
+          "
+        >
+          ▶
+        </button>
+      </div>
 
       {/* SOUND BUTTON */}
 
