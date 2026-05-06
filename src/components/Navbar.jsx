@@ -1,6 +1,6 @@
 import React from "react";
 
-import logo from "../assets/hero/logo-video.mp4";
+const logo = "/logo-video.mp4";
 
 const navItems = [
   {
@@ -55,18 +55,22 @@ const Navbar = () => {
         justify-between
         "
       >
-        {/* LOGO */}
+        {/* LOGO VIDEO */}
 
-        <img
+        <video
           src={logo}
-          alt=""
+          autoPlay
+          muted
+          loop
+          playsInline
           className="
-          w-[110px]
-          h-[64px]
+          w-[140px]
+          h-[78px]
           object-cover
           rounded-[18px]
           border
           border-[#c9ab57]
+          shadow-[0_0_25px_rgba(201,171,87,0.35)]
           "
         />
 

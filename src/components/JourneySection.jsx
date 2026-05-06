@@ -2,9 +2,9 @@
 
 import React from "react";
 
-import circle1 from "../assets/hero/circle1.jpeg";
-import circle2 from "../assets/hero/circle2.jpeg";
-import circle3 from "../assets/hero/circle3.jpeg";
+import circle1 from "../assets/journey/journey1.jpeg";
+import circle2 from "../assets/journey/journey2.jpeg";
+import circle3 from "../assets/journey/journey3.jpeg";
 
 const cards = [
   {
