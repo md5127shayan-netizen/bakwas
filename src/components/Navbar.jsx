@@ -1,6 +1,6 @@
 import React from "react";
 
-const logo = "/logo-video.mp4";
+
 
 const navItems = [
   {
@@ -58,21 +58,22 @@ const Navbar = () => {
         {/* LOGO VIDEO */}
 
         <video
-          src={logo}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="
-          w-[140px]
-          h-[78px]
-          object-cover
-          rounded-[18px]
-          border
-          border-[#c9ab57]
-          shadow-[0_0_25px_rgba(201,171,87,0.35)]
-          "
-        />
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="
+    w-[140px]
+    h-[78px]
+    object-cover
+    rounded-[18px]
+    border
+    border-[#c9ab57]
+    shadow-[0_0_25px_rgba(201,171,87,0.35)]
+  "
+>
+  <source src="/logo-video.mp4" type="video/mp4" />
+</video>
 
         {/* CENTER NAV */}
 
