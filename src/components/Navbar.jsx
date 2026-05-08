@@ -58,19 +58,12 @@ const Navbar = () => {
         {/* LOGO VIDEO */}
 
         <video
+  controls
   autoPlay
   muted
   loop
   playsInline
-  className="
-    w-[140px]
-    h-[78px]
-    object-cover
-    rounded-[18px]
-    border
-    border-[#c9ab57]
-    shadow-[0_0_25px_rgba(201,171,87,0.35)]
-  "
+  width="300"
 >
   <source src="/logo-video.mp4" type="video/mp4" />
 </video>
